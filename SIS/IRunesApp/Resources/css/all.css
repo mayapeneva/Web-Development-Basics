@@ -1,0 +1,56 @@
+﻿@bgPrmColor = mediumseagreen;
+@txPrmColor = whitesmoke;
+
+.navbar {
+    background-color: mediumseagreen;
+}
+
+.navbar-brand {
+    color: whitesmoke;
+}
+
+.nav-link {
+    color: whitesmoke;
+}
+
+.footer-logo {
+    text-align: center
+}
+
+.top-border-line {
+    border-top: solid;
+    border-color: mediumseagreen;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.bottom-border-line {
+    border-top: solid;
+    border-color: mediumseagreen;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.jumbotron {
+    background-color: mediumseagreen;
+    color: white;
+}
+
+a {
+    color: orange;
+}
+
+.index-border-line {
+    border-top: solid;
+    border-color: white;
+    margin-bottom: 20px;
+}
+
+.btn-success {
+    background-color: mediumseagreen;
+}
+
+#logintitle {
+    color: mediumseagreen;
+    margin-bottom: 15px;
+}

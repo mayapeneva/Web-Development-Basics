@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyExam.BindingModels\MyExam.BindingModels.csproj" />
+    <ProjectReference Include="..\MyExam.DataModels\MyExam.DataModels.csproj" />
+    <ProjectReference Include="..\MyExam.Data\MyExam.Data.csproj" />
+    <ProjectReference Include="..\MyExam.ViewModels\MyExam.ViewModels.csproj" />
+    <ProjectReference Include="..\SIS.Framework\SIS.Framework.csproj" />
+  </ItemGroup>
+
+</Project>

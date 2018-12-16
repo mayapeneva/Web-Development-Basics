@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SoftUni Beers</title>
+    <link rel="stylesheet" href="style/style.css"/>
+</head>
+
+<body>
+<nav>
+    <p class="topnav">
+        <a class="logo" href="index.html"><img src="images/logo.png"/></a>
+        <a href="index.html">Home</a>
+        <a href="all-beers.html">See All Beers</a>
+        <a class="active" href="order.html">Order a Beer</a>
+        <a class="right" href="register.html">Register</a>
+        <a class="right" href="login.html">Log in</a>
+    </p>
+</nav>
+
+<main>
+    <center>
+        <h1>Order a Beer</h1>
+        <br/>
+        <form>
+            <label>Brand</label>
+            <select multiple>
+                <option selected disabled>Select a brand</option>
+                <option>Corona Extra 330ml</option>
+                <option>Stella Artois 330ml</option>
+                <option>Calsberg 330ml</option>
+                <option>Heineken 330ml</option>
+            </select>
+            <label>Quantity</label>
+            <input type="number" min="1" max="15" placeholder="Enter amount of beers (1-15)">
+            <label>Destination</label>
+            <select multiple>
+                <option selected disabled>Select a destination</option>
+                <option>Home</option>
+                <option>Office</option>
+                <option>Beach</option>
+            </select>
+            <label>Enter your birthday</label>
+            <input type="date" placeholder="mm/dd/yyyy">
+            <label>Got an opinion, comment, recommendation? Share it with us!</label>
+            <input type="text" placeholder="Share your opinion with us!">
+            <input type="submit" value="Submit">
+        </form>
+    </center>
+</main>
+
+<footer>
+    <hr/>
+    <p><em>&copy; 2017 &ndash; SoftUni Beers</em></p>
+</footer>
+</body>
+</html>

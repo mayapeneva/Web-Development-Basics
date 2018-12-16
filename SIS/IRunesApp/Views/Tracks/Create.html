@@ -1,0 +1,13 @@
+﻿<h1>Create Track</h1>
+<hr />
+
+<form method="post" action="/tracks/create">
+    Name <input type="text" name="name" placeholder="Name" required /> <br />
+    Link <input type="url" name="link" placeholder="Link" required /> <br />
+    Price <input type="number" min="0.01" step="0.01" name="price" placeholder="Price" required /> <br />
+    <input type="submit" name="create" value="Create" />
+</form>
+<hr />
+
+<a href="\albums\details{{albumId}}">Back To Album</a>
+<hr />

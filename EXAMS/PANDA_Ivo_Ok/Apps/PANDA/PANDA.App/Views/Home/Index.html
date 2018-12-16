@@ -1,0 +1,58 @@
+﻿<div style="display: @Model.IsNotLogged">
+    <div class="jumbotron mt-3 bg-panda">
+        <h1 class="text-white">Welcome to PANDA Delivery Services.</h1>
+        <hr class="bg-white hr-2" />
+        <h3 class="text-white"><a href="/Users/Login">Login</a> if you have an account.</h3>
+        <h3 class="text-white"><a href="/Users/Register">Register</a> if you don't.</h3>
+    </div>
+</div>
+
+<div style="display: @Model.IsLoggedAdmin">
+    <h2 class="text-panda text-center">Hello, Administrator @Model.Username!</h2>
+    <hr class="bg-panda hr-2" />
+    <div class="row d-flex justify-content-between">
+        <div class="col-md-3">
+            <h4 class="text-center">Pending</h4>
+            <ul class="list-group border-panda">
+                @Model.Collection.Pending(@Item)
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h4 class="text-center">Shipped</h4>
+            <ul class="list-group border-panda">
+                @Model.Collection.Shipped(@Item)
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h4 class="text-center">Delivered</h4>
+            <ul class="list-group border-panda">
+                @Model.Collection.Delivered(@Item)
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div style="display: @Model.IsLoggedUser">
+    <h2 class="text-panda text-center">Hello, @Model.Username!</h2>
+    <hr class="bg-panda hr-2" />
+    <div class="row d-flex justify-content-between">
+        <div class="col-md-3">
+            <h4 class="text-center">Pending</h4>
+            <ul class="list-group border-panda">
+                @Model.Collection.Pending(@Item)
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h4 class="text-center">Shipped</h4>
+            <ul class="list-group border-panda">
+                @Model.Collection.Shipped(@Item)
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h4 class="text-center">Delivered</h4>
+            <ul class="list-group border-panda">
+                @Model.Collection.Delivered(@Item)
+            </ul>
+        </div>
+    </div>
+</div>

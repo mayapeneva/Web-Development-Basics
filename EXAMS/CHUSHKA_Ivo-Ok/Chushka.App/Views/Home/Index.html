@@ -1,0 +1,36 @@
+﻿<main>
+    <div style="display: @Model.IsNotLogged">
+        <div class="jumbotron mt-3 chushka-bg-color">
+            <h1>Welcome to Chushka Universal Web Shop</h1>
+            <hr class="bg-white" />
+            <h3><a class="nav-link-dark" href="/Users/Login">Login</a> if you have an account.</h3>
+            <h3><a class="nav-link-dark" href="/Users/Register">Register</a> if you don't.</h3>
+        </div>
+    </div>
+
+    <div style="display: @Model.IsLoggedAdmin">
+        <div class="container-fluid text-center">
+            <h2>Greetings, @Model.Username!</h2>
+            <h4>Feel free to view and order any of our products.</h4>
+        </div>
+        <hr class="hr-2 bg-dark" />
+        <div class="container-fluid products-holder">
+            <div class="row d-flex justify-content-around mt-4">
+                @Model.Collection.Products(@Item)
+            </div>
+        </div>
+    </div>
+
+    <div style="display: @Model.IsLoggedUser">
+        <div class="container-fluid text-center">
+            <h2>Greetings, admin!</h2>
+            <h4>Enjoy your work today!</h4>
+        </div>
+        <hr class="hr-2 bg-dark" />
+        <div class="container-fluid product-holder">
+            <div class="row d-flex justify-content-around mt-4">
+                @Model.Collection.Products(@Item)
+            </div>
+        </div>
+    </div>
+</main>

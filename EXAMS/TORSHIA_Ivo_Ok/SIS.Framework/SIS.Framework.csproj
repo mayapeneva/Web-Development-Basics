@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SIS.HTTP\SIS.HTTP.csproj" />
+    <ProjectReference Include="..\SIS.WebServer\SIS.WebServer.csproj" />
+    <ProjectReference Include="..\Torshia.Data\Torshia.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+</Project>

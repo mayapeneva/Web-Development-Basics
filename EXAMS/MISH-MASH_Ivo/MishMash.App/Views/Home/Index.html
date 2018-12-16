@@ -1,0 +1,52 @@
+﻿<div style="display: @Model.IsNotLogged">
+    <div class="jumbotron mt-3 bg-mishmash">
+        <h1 class="text-white">Welcome to Mish-Mash Media Channels</h1>
+        <hr class="bg-white hr-2" />
+        <h3 class="text-white"><a href="/Users/Login">Login</a> if you have an account.</h3>
+        <h3 class="text-white"><a href="Users/Register">Register</a> if you don't.</h3>
+    </div>
+</div>
+
+<div style="display: @Model.IsLoggedUser">
+    <h4 class="text-mishmash text-center">Welcome, @Model.Username!</h4>
+
+    <h2 class="text-mishmash">Your channels</h2>
+    <hr class="hr-2 bg-mishmash">
+    <div class="row d-flex justify-content-around mb-3">
+        @Model.Collection.FollowedChannels(@Item)
+    </div>
+
+    <h2 class="text-mishmash">Suggested</h2>
+    <hr class="hr-2 bg-mishmash">
+    <div class="row d-flex justify-content-around mb-3">
+        @Model.Collection.SuggestedChannels(@Item)
+    </div>
+
+    <h2 class="text-mishmash">See Other</h2>
+    <hr class="hr-2 bg-mishmash">
+    <div class="row d-flex justify-content-around mb-5">
+        @Model.Collection.OtherChannels(@Item)
+    </div>
+</div>
+
+<div style="display: @Model.IsLoggedAdmin">
+    <h4 class="text-mishmash text-center">Welcome, @Model.Username!</h4>
+
+    <h2 class="text-mishmash">Your channels</h2>
+    <hr class="hr-2 bg-mishmash">
+    <div class="row d-flex justify-content-around mb-3">
+        @Model.Collection.FollowedChannels(@Item)
+    </div>
+
+    <h2 class="text-mishmash">Suggested</h2>
+    <hr class="hr-2 bg-mishmash">
+    <div class="row d-flex justify-content-around mb-3">
+        @Model.Collection.SuggestedChannels(@Item)
+    </div>
+
+    <h2 class="text-mishmash">See Other</h2>
+    <hr class="hr-2 bg-mishmash">
+    <div class="row d-flex justify-content-around mb-5">
+        @Model.Collection.OtherChannels(@Item)
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Chushka.DataModels\Chushka.DataModels.csproj" />
+    <ProjectReference Include="..\Chushka.Data\Chushka.Data.csproj" />
+    <ProjectReference Include="..\Chushka.ViewModels\Chushka.ViewModels.csproj" />
+    <ProjectReference Include="..\SIS.Framework\SIS.Framework.csproj" />
+  </ItemGroup>
+
+</Project>
