@@ -10,6 +10,7 @@
     public class TasksController : BaseController
     {
         private const string UnsuccessfulTaskCreate = "Could not create a task with details provided";
+        private const string NoTask = "We could not find the task details. Maybe it was changed in the meantime";
 
         private readonly ITasksService tasksService;
 
@@ -42,6 +43,22 @@
             }
 
             return this.RedirectToAction("/");
+        }
+
+        [Authorize]
+        public IActionResult Details()
+        {
+            var taskId = int.Parse(this.Request.QueryData["id"].ToString());
+            var task = this.tasksService.GetTaskById(taskId);
+            if (task == null)
+            {
+                this.Model.Data["Error"] = NoTask;
+                return this.View();
+            }
+
+            this.Model.Data["Task"] = task;
+
+            return this.View();
         }
     }
 }

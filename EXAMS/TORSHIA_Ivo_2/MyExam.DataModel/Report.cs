@@ -14,6 +14,6 @@
         public int TaskId { get; set; }
 
         public virtual User Reporter { get; set; }
-        public int ReportedId { get; set; }
+        public int ReporterId { get; set; }
     }
 }

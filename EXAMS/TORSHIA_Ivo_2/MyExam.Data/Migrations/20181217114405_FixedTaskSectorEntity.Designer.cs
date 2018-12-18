@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyExam.Data;
 
 namespace MyExam.Data.Migrations
 {
     [DbContext(typeof(MyExamDbContext))]
-    partial class MyExamDbContextModelSnapshot : ModelSnapshot
+    [Migration("20181217114405_FixedTaskSectorEntity")]
+    partial class FixedTaskSectorEntity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25,9 +27,11 @@ namespace MyExam.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("ReportedId");
+
                     b.Property<DateTime>("ReportedOn");
 
-                    b.Property<int>("ReporterId");
+                    b.Property<int?>("ReporterId");
 
                     b.Property<string>("Status")
                         .IsRequired();
@@ -106,8 +110,7 @@ namespace MyExam.Data.Migrations
                 {
                     b.HasOne("MyExam.DataModel.User", "Reporter")
                         .WithMany("Reports")
-                        .HasForeignKey("ReporterId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("ReporterId");
 
                     b.HasOne("MyExam.DataModel.Task", "Task")
                         .WithMany()

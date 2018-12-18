@@ -16,7 +16,7 @@
 
             dependencyContainer.RegisterDependency<IUsersService, UsersService>();
             dependencyContainer.RegisterDependency<ITasksService, TasksService>();
-            //dependencyContainer.RegisterDependency<IOrdersService, OrdersService>();
+            dependencyContainer.RegisterDependency<IReportsService, ReportsService>();
 
             base.ConfigureServices(dependencyContainer);
         }

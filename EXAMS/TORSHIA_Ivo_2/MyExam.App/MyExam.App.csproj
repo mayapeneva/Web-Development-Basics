@@ -15,14 +15,25 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Shared\DisplayTemplates\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="Views\Home\IndexLogged.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Views\Home\Index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Views\Shared\DisplayTemplates\ReportViewModelDisplayTemplate.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Views\Shared\DisplayTemplates\ReportDetailsViewModelDisplayTemplate.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Views\Shared\DisplayTemplates\TaskDetailsViewModelDisplayTemplate.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Views\Shared\DisplayTemplates\TaskViewModelDisplayTemplate.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Views\Tasks\Details.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Views\Users\Login.html">
@@ -31,10 +42,10 @@
     <None Update="Views\Users\Register.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Views\report-details.html">
+    <None Update="Views\Reports\Details.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Views\reports-all.html">
+    <None Update="Views\Reports\All.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Views\Shared\_Layout.html">
@@ -44,12 +55,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Views\Tasks\Create.html">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Views\task-details.html">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Views\user-home.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
