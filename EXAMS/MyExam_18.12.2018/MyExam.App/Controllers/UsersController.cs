@@ -15,10 +15,12 @@
         private const string UnsuccessfulLogin = "The details you have provided in order to log in are not correct.";
 
         private readonly IUsersService userService;
+        private readonly IReceiptsService receiptsService;
 
-        public UsersController(IUsersService userService)
+        public UsersController(IUsersService userService, IReceiptsService receiptsService)
         {
             this.userService = userService;
+            this.receiptsService = receiptsService;
         }
 
         public IActionResult Register()
@@ -100,6 +102,17 @@
             this.SignOut();
 
             return this.RedirectToAction("/");
+        }
+
+        [Authorize]
+        public IActionResult Profile()
+        {
+            var receipts = this.receiptsService.GetAllUsersReceipts(this.Identity);
+
+            this.Model.Data["Username"] = this.Identity.Username;
+            this.Model.Data["Receipts"] = receipts;
+
+            return this.View();
         }
     }
 }

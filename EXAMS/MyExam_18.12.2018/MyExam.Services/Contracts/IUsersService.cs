@@ -2,7 +2,7 @@
 {
     using System.Collections.Generic;
     using BindingModels;
-    using ViewModels;
+    using Common.DTOs;
 
     public interface IUsersService
     {

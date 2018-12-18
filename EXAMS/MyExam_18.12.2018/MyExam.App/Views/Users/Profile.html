@@ -1,0 +1,16 @@
+﻿<h1 class="text-center text-musaca">Greetings, @Model.Username</h1>
+<hr class="bg-musaca w-50 hr-2" />
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Total</th>
+            <th scope="col">IssuedOn</th>
+            <th scope="col">Cashier</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @Model.Collection.Receipts
+    </tbody>
+</table>

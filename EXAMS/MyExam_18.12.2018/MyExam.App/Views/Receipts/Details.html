@@ -1,0 +1,11 @@
+﻿<div class="container col-md-6 align-content-center">
+    <h1 class="text-center">Receipt Details</h1>
+    <hr class="bg-musaca hr-2" />
+    <table class="table text-dark">
+        <tbody>
+            @Model.Collection.Orders(@Item)
+        </tbody>
+    </table>
+    <hr class="bg-musaca hr-2" />
+    @Model.Collection.Receipt(@Item)
+</div>

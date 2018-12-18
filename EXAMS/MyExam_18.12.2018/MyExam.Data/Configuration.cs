@@ -2,6 +2,6 @@
 {
     public class Configuration
     {
-        public const string ConnectionString = @"Server=.\SQLEXPRESS;Database=MyExamDB;Integrated Security=True";
+        public const string ConnectionString = @"Server=.\SQLEXPRESS;Database=MUSACA;Integrated Security=True";
     }
 }

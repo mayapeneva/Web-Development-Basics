@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-namespace SIS.HTTP.Common
+﻿namespace SIS.HTTP.Common
 {
     using System;
 

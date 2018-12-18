@@ -2,7 +2,7 @@
 {
     using System.Linq;
     using System.Runtime.CompilerServices;
-    using DataModel.Enums;
+    using DataModels.Enums;
     using SIS.Framework.ActionResults;
     using SIS.Framework.Controllers;
 

@@ -9,17 +9,49 @@
     <ProjectReference Include="..\MyExam.BindingModels\MyExam.BindingModels.csproj" />
     <ProjectReference Include="..\MyExam.Data\MyExam.Data.csproj" />
     <ProjectReference Include="..\MyExam.Services\MyExam.Services.csproj" />
-    <ProjectReference Include="..\MyExam.ViewModels\MyExam.ViewModels.csproj" />
     <ProjectReference Include="..\SIS.Framework\SIS.Framework.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Home\" />
-    <Folder Include="Views\Shared\DisplayTemplates\" />
-    <Folder Include="Views\Users\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <None Update="Views\Home\IndexLoggedIn.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Views\Home\Index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Views\Products\All.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Views\Receipts\Details.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Views\Shared\DisplayTemplates\ReceiptAllViewModelDisplayTemplate.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Views\Shared\DisplayTemplates\ReceiptViewModelDisplayTemplate.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Views\Shared\DisplayTemplates\ProductViewModelDisplayTemplate.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Views\Shared\DisplayTemplates\OrderViewModelDisplayTemplate.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Views\Receipts\All.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Views\Users\Profile.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Views\Users\Register.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Views\Users\Login.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Views\Products\Create.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Views\Shared\_Layout.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

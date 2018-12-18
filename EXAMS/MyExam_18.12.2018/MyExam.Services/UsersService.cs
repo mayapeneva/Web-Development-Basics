@@ -1,12 +1,14 @@
 ﻿namespace MyExam.Services
 {
     using System.Collections.Generic;
+    using System.Linq;
     using Base;
     using BindingModels;
+    using Common.DTOs;
     using Contracts;
+    using Data;
     using DataModels;
     using DataModels.Enums;
-    using ViewModels;
 
     public class UsersService : BaseService, IUsersService
     {

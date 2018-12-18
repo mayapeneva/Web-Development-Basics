@@ -9,7 +9,7 @@ namespace SIS.Framework
 {
     public static class WebHost
     {
-        private const int HostingPort = 8000; 
+        private const int HostingPort = 80;
 
         public static void Start(IMvcApplication application)
         {
@@ -20,7 +20,7 @@ namespace SIS.Framework
             IResourceRouter resourceRouter = new ResourceRouter();
             ICustomRouter customRouter = new CustomRouter();
 
-            IHttpRequestHandler httpRequestHandlingContext 
+            IHttpRequestHandler httpRequestHandlingContext
                 = new HttpRequestHandlingContext(controllerRouter, resourceRouter, customRouter);
 
             application.Configure();
